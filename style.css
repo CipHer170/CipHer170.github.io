@@ -1,0 +1,94 @@
+body {
+    background: #FFFFFF;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 1) 100%);
+    content: "Hey There";
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 100, 11);
+
+}
+
+a {
+    color: rgb(110, 100, 11);
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 80px;
+    color: rgb(110, 100, 11);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+
+}
+
+.background {
+    width: fit-content;
+    font-weight: 100;
+    color: rgb(114, 114, 114);
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.background_text {
+    font-size: 64px;
+}
+
+
+.main_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    /* background-color: aqua; */
+    position: absolute;
+    left: 20%;
+    top: 9%;
+}
+
+.to_journey {
+    position: absolute;
+    left: 55%;
+    top: 75%;
+}
+
+.fade_in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contact:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
+/* ------- certs ----------- */
+.journey_img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.journey_home_link {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
