@@ -103,6 +103,7 @@ a {
     }
 
     .container {
+        max-height: 700px;
         margin: 0 auto;
         padding: 0 24px;
         color: rgb(110, 100, 11);
@@ -132,8 +133,8 @@ a {
 
     .to_journey {
         position: absolute;
-        left: 31%;
-        top: 80%;
+        left: 33%;
+        top: 65%;
     }
 
     .portfolio {
@@ -142,10 +143,7 @@ a {
 
 
     /* ------- certs mobile ----------- */
-    .container {
-        max-height: 700px;
 
-    }
 
     .journey_header {
         display: block;
