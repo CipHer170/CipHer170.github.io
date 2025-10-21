@@ -92,3 +92,49 @@ a {
     justify-content: flex-end;
     padding-right: 80px;
 }
+
+
+
+
+/* ----- media ----- */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0 24px;
+        color: rgb(110, 100, 11);
+    }
+
+    .background {
+        width: fit-content;
+        font-weight: 100;
+        color: rgb(114, 114, 114);
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .background_text {
+        font-size: 64px;
+    }
+
+
+    .main_img {
+        visibility: hidden;
+    }
+
+    .to_journey {
+        position: absolute;
+        left: 30%;
+        top: 75%;
+    }
+
+    .portfolio {
+        visibility: hidden;
+    }
+
+}
