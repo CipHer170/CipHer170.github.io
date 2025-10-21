@@ -133,14 +133,20 @@ a {
     .to_journey {
         position: absolute;
         left: 31%;
-        top: 60%;
+        top: 80%;
     }
 
     .portfolio {
         visibility: hidden;
     }
 
+
     /* ------- certs mobile ----------- */
+    .container {
+        max-height: 700px;
+
+    }
+
     .journey_header {
         display: block;
         text-align: center;
