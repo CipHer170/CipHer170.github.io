@@ -114,7 +114,7 @@ a {
         color: rgb(114, 114, 114);
         z-index: -1;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 30%;
     }
 
@@ -124,17 +124,44 @@ a {
 
 
     .main_img {
-        visibility: hidden;
+        width: 50px;
+        left: -50px;
+        top: 550px;
+        /* visibility: hidden; */
     }
 
     .to_journey {
         position: absolute;
-        left: 30%;
-        top: 75%;
+        left: 31%;
+        top: 60%;
     }
 
     .portfolio {
         visibility: hidden;
     }
+
+    /* ------- certs mobile ----------- */
+    .header {
+        display: block;
+        text-align: center;
+
+    }
+
+    .journey_img {
+        display: block;
+        width: 100%;
+    }
+
+    .journey_home_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 24px;
+    }
+
+    .contact_journey {
+        visibility: hidden;
+    }
+
 
 }
