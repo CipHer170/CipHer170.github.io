@@ -1,171 +1,139 @@
 body {
-    background: #FFFFFF;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 1) 100%);
-    content: "Hey There";
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(110, 100, 11);
+    background-color: bisque;
+    font-family: "Montserrat", sans-serif;
 
 }
 
 a {
-    color: rgb(110, 100, 11);
-
+    color: #222;
+    text-decoration: none;
 }
 
 .container {
+    max-width: 1446px;
     margin: 0 auto;
-    padding: 0 80px;
-    color: rgb(110, 100, 11);
+    padding: 0 40px;
+    overflow: hidden;
+
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
-
-}
-
-.background {
-    width: fit-content;
-    font-weight: 100;
-    color: rgb(114, 114, 114);
-    z-index: -1;
-    position: absolute;
-    top: 30%;
-    left: 55%;
-}
-
-.background_text {
-    font-size: 64px;
-}
-
-
-.main_img {
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 480px;
-    /* background-color: aqua; */
-    position: absolute;
-    left: 20%;
-    top: 9%;
 }
 
-.to_journey {
-    position: absolute;
-    left: 55%;
-    top: 75%;
+.hero_title {
+    text-align: center;
+    color: #2b2b2b;
 }
 
-.fade_in {
-    animation: fadeIn 1s ease-in forwards;
+.hero_title h3 {
+    color: #111111;
 }
 
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.hero_title a:hover {
+    opacity: 0.8;
+    letter-spacing: 1px;
 }
 
-.contact:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.hero_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero_page h3 {
+    font-weight: 400;
+    font-size: 64px;
+    font-weight: 600;
 
 }
 
+.hero_page h4 {
+    font-weight: 400;
+    font-size: 48px;
+    font-weight: 600;
 
-/* ------- certs ----------- */
-.journey_img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
 }
+
+
+
+/* ======== certs styke============== */
 
 .journey_home_link {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 80px;
+    position: fixed;
+    right: 40px;
+    color: rgb(240, 82, 43);
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
+.sessions h2 {
+    color: rgb(240, 82, 43);
 
+}
 
-/* ----- media ----- */
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+.sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.session_1 a {
+    text-decoration: underline;
+}
+
+/* ================= media medium====================== */
+@media (max-width: 1023px) {
     .container {
-        max-height: 700px;
-        margin: 0 auto;
-        padding: 0 24px;
-        color: rgb(110, 100, 11);
+        padding: 0 20px;
     }
 
-    .background {
-        width: fit-content;
-        font-weight: 100;
-        color: rgb(114, 114, 114);
-        z-index: -1;
-        position: absolute;
-        top: 20%;
-        left: 30%;
+}
+
+/* ================= media mobile====================== */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+        overflow: hidden;
     }
 
-    .background_text {
-        font-size: 64px;
-    }
-
-
-    .main_img {
-        width: 50px;
-        left: -50px;
-        top: 550px;
-        /* visibility: hidden; */
-    }
-
-    .to_journey {
-        position: absolute;
-        left: 33%;
-        top: 65%;
-    }
-
-    .portfolio {
-        visibility: hidden;
-    }
-
-
-    /* ------- certs mobile ----------- */
-
-
-    .journey_header {
-        display: block;
-        text-align: center;
-
-    }
-
-    .journey_img {
-        display: block;
-        width: 100%;
-    }
-
-    .journey_home_link {
+    .hero_page {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        padding: 24px 24px;
     }
 
-    .contact_journey {
-        visibility: hidden;
+
+    .hero_image {
+        width: 100%;
+        opacity: 70%;
     }
 
+    .hero_title {
+        position: absolute;
+        top: 200px;
+        right: 148px;
+        margin: 0;
+    }
+
+    .sessions {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .session {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 56px;
+    }
 
 }
