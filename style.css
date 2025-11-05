@@ -108,20 +108,28 @@ a {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        height: 87vh;
     }
 
 
     .hero_image {
         width: 100%;
         opacity: 70%;
+
     }
 
     .hero_title {
         position: absolute;
-        top: 200px;
-        right: 148px;
+        top: center;
+        right: center;
         margin: 0;
     }
+
+    .hero_title h4 {
+        font-size: 32px;
+    }
+
+    /* ======== certs styke============== */
 
     .sessions {
         display: flex;
